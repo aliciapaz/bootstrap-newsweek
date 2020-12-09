@@ -443,6 +443,12 @@ body h5, body .h5 {
   font-weight: bolder;
 }
 
+body h4, body .h4 {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
 h2:hover, .h2:hover,
 h3:hover,
 .h3:hover,
@@ -500,7 +506,8 @@ h5:hover,
   margin-top: 5rem;
 }
 
-.magazine .n-icon {
+.magazine .n-icon,
+.editor .n-icon {
   display: block;
   width: 29px;
   height: 28px;
@@ -533,6 +540,14 @@ h5:hover,
   padding: 0 0.5rem;
   background-color: #fff;
   color: #ff0500;
+}
+
+/* editor's pick */
+.editor .editor-category {
+  background-color: #fff;
+  opacity: 0.75;
+  color: #ff0500;
+  padding: 0.25rem 0.75rem;
 }
 
 /*!
