@@ -8,7 +8,7 @@
 /* variables */ 
 
 $body-bg: #f4f5f6;
-$red-color: #ff0500;
+$red-color: #ff0600;
 $roboto: "Roboto Condensed",sans-serif;
 
 /* mixins */
@@ -52,6 +52,10 @@ h4:hover,
 h5:hover {
     color: #000;
     text-decoration: underline $red-color;
+}
+
+ul li {
+    padding-left: 0;
 }
 
 .container-fluid {
@@ -144,6 +148,13 @@ h5:hover {
     opacity: .75;
     color: $red-color;
     padding: .25rem .75rem; 
+}
+
+/* picks */ 
+
+.picks .picks-title {
+    color: $red-color;
+    font-size: 1.3rem;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

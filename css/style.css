@@ -457,7 +457,11 @@ h4:hover,
 h5:hover,
 .h5:hover {
   color: #000;
-  text-decoration: underline #ff0500;
+  text-decoration: underline #ff0600;
+}
+
+ul li {
+  padding-left: 0;
 }
 
 .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
@@ -472,7 +476,7 @@ h5:hover,
 
 /* Mobile navbar */
 .mobile-navbar .mobile-header {
-  background: #ff0500;
+  background: #ff0600;
   height: 3rem;
 }
 
@@ -512,7 +516,7 @@ h5:hover,
   width: 29px;
   height: 28px;
   background-image: url("https://g.newsweek.com/www/images/logo-n1.svg");
-  background-color: #ff0500;
+  background-color: #ff0600;
   background-size: contain;
   margin-right: 8px;
 }
@@ -520,7 +524,7 @@ h5:hover,
 .magazine .december {
   padding: 0.25rem 0.75rem;
   background-color: #fceaea;
-  color: #ff0500;
+  color: #ff0600;
   font-size: 0.85rem;
 }
 
@@ -531,7 +535,7 @@ h5:hover,
 .magazine .red-category {
   margin-right: 0.5rem;
   padding: 0 0.5rem;
-  background-color: #ff0500;
+  background-color: #ff0600;
   color: #fff;
 }
 
@@ -539,15 +543,21 @@ h5:hover,
   margin-right: 1rem;
   padding: 0 0.5rem;
   background-color: #fff;
-  color: #ff0500;
+  color: #ff0600;
 }
 
 /* editor's pick */
 .editor .editor-category {
   background-color: #fff;
   opacity: 0.75;
-  color: #ff0500;
+  color: #ff0600;
   padding: 0.25rem 0.75rem;
+}
+
+/* picks */
+.picks .picks-title {
+  color: #ff0600;
+  font-size: 1.3rem;
 }
 
 /*!
