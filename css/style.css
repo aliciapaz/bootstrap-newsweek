@@ -424,11 +424,17 @@ body {
   overflow-x: hidden;
 }
 
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  max-width: 1310px;
+  background-color: #fff;
+}
+
 /* variables */
 /* mixins */
 /* Mobile navbar */
 .mobile-navbar .mobile-header {
   background: #ff0500;
+  height: 3rem;
 }
 
 .mobile-navbar .nw-logo {
@@ -449,8 +455,26 @@ body {
 }
 
 .mobile-navbar .subsc-btn {
-  font: bold 0.6rem "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 0.6rem;
+  background-color: #ffe400;
   height: 24px;
+}
+
+/* N in the Magazine */
+.bottom {
+  margin-top: 5rem;
+}
+
+.magazine .n-icon {
+  display: block;
+  width: 29px;
+  height: 28px;
+  background-image: url("https://g.newsweek.com/www/images/logo-n1.svg");
+  background-color: #ff0500;
+  background-size: contain;
+  margin-right: 8px;
 }
 
 /*!

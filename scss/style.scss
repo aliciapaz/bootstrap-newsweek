@@ -10,10 +10,16 @@ body {
     overflow-x: hidden;
 }
 
+.container-fluid {
+    max-width: 1310px;
+    background-color: #fff;
+}
+
 /* variables */ 
 
 $body-bg: #f4f5f6;
 $red-color: #ff0500;
+$roboto: "Roboto Condensed",sans-serif;
 
 /* mixins */
 
@@ -21,6 +27,7 @@ $red-color: #ff0500;
 
 .mobile-navbar .mobile-header {
     background: $red-color;
+    height: 3rem;
 }
 
 .mobile-navbar .nw-logo {
@@ -41,8 +48,27 @@ $red-color: #ff0500;
 }
 
 .mobile-navbar .subsc-btn {
-    font: bold .6rem "Roboto Condensed",sans-serif;
+    font-family: $roboto;
+    font-weight: 900;
+    font-size: .6rem;
+    background-color: #ffe400;
     height: 24px;
+}
+
+/* N in the Magazine */
+
+.bottom {
+    margin-top:5rem; // only while developing, don't forget to remove this later
+}
+
+.magazine .n-icon {
+    display: block;
+    width: 29px;
+    height: 28px;
+    background-image: url("https://g.newsweek.com/www/images/logo-n1.svg");
+    background-color: $red-color;
+    background-size: contain;
+    margin-right: 8px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
