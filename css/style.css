@@ -562,8 +562,23 @@ ul li {
 }
 
 /* subscribe cards */
+.subscribe-cards .card {
+  background-color: #f4f5f6;
+}
+
 .subscribe-cards .subscribe-title {
   color: #ff0600;
+}
+
+.subscribe-cards .overlapping-container {
+  position: relative;
+  width: 20%;
+}
+
+.subscribe-cards .top-cover {
+  position: absolute;
+  top: 14px;
+  left: 85px;
 }
 
 /*!

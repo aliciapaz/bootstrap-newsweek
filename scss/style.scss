@@ -160,8 +160,23 @@ ul li {
 
 /* subscribe cards */
 
+.subscribe-cards .card {
+    background-color: $body-bg;
+}
+
 .subscribe-cards .subscribe-title {
     color:$red-color;
+}
+
+.subscribe-cards .overlapping-container {
+    position:relative;
+    width: 20%;
+}
+
+.subscribe-cards .top-cover {
+    position: absolute;
+    top: 14px;
+    left: 85px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
