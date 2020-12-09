@@ -3,3 +3,46 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/_reboot";
+
+/* global */
+
+body {
+    overflow-x: hidden;
+}
+
+/* variables */ 
+
+$body-bg: #f4f5f6;
+$red-color: #ff0500;
+
+/* mixins */
+
+/* Mobile navbar */
+
+.mobile-navbar .mobile-header {
+    background: $red-color;
+}
+
+.mobile-navbar .nw-logo {
+    width: 132px;
+    height: 20px;
+}
+
+.mobile-navbar .navbar-collapse {
+    background: #fff;
+    width: 220px;
+}
+
+.mobile-navbar .login-btn,
+.mobile-navbar .navbar-toggler {
+    color: #fff;
+    opacity: 0.75;
+    font-size: 1rem;
+}
+
+.mobile-navbar .subsc-btn {
+    font: bold .6rem "Roboto Condensed",sans-serif;
+    height: 24px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
