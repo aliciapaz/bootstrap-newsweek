@@ -155,6 +155,13 @@ ul li {
 .picks .picks-title {
     color: $red-color;
     font-size: 1.3rem;
+    border-top: 1px solid #d9d9d9;
+}
+
+/* subscribe cards */
+
+.subscribe-cards .subscribe-title {
+    color:$red-color;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
