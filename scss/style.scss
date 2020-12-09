@@ -59,7 +59,7 @@ ul li {
 }
 
 .container-fluid {
-    max-width: 1310px;
+    max-width: 1312px;
     background-color: #fff;
 }
 
@@ -193,6 +193,17 @@ ul li {
 
 .newsletter-card .info {
     padding-top: 12px;
+}
+
+/* footer */ 
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: .75rem;
+}
+
+.footer-top .bottom-logo {
+    width: 236px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
