@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/aliciapaz/bootstrap-newsweek#readme",
   "devDependencies": {
+    "@popperjs/core": "^2.5.4",
     "hint": "^6.0.7",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
