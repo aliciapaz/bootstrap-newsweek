@@ -13,34 +13,64 @@
     <title>Newsweek</title>
   </head>
   <body>
+
+
+
+  <div>
+      <!-- main navbar-->
+      <div class="container-fluid d-none d-lg-block d-xl-block d-xxl-block navbar-expand-xl navbar-expand-xxl">
+        <nav class="desktop-navbar navbar navbar-expand-lg navbar-expand-xl d-flex flex-column">
+          <header class="d-flex container-fluid navbar-light">
+            <div>
+              <div><i class="fas fa-cloud-sun"></i> 28° Santiago, CL</div>
+              <div>Mon, Dec 07, 2020</div>
+            </div>
+            <div><img class="nw-logo" src="./img/newsweek-logo.png" /></div>
+            <div class="col2">
+              <button>LOGIN</button>
+              <button class="subsc-btn btn btn-warning rounded-pill btn-sm">SUBSCRIBE &gt;</button>
+            </div>
+          </header>
+          <div class="d-flex">
+            <ul class="d-flex">
+              <li><a href="#">U.S.</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Tech & Science</a></li>
+              <li><a href="#">Culture</a></li>
+              <li><a href="#">Newsgeek</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">The Debate</a></li>
+              <li><a href="#">Vantage</a></li>
+              <li><a href="#">Weather</a></li>
+            </ul>
+            <form>
+              <label>Search</label>
+              <input type="text" placeholder="Search" />
+              <i class="fas fa-search"></i>
+            </form>
+          </div>
+          <div>
+            <ul class="d-flex">
+              <li><a href="#">TRENDING</a></li>
+              <li><a href="#">JOE BIDEN</a></li>
+              <li><a href="#">DONALD TRUMP</a></li>
+              <li><a href="#">2020 ELECTION</a></li>
+              <li><a href="#">CORONAVIRUS</a></li>
+              <li><a href="#">STIMULUS PACKAGE</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     <!-- mobile navbar -->
     <nav class="mobile-navbar container-fluid">
-      <div
-        class="mobile-header container-fluid navbar navbar-expand-sm navbar-light bg-default d-lg-none fixed-top"
-      >
-        <img
-          class="nw-logo"
-          src="./img/newsweek-logo.png"
-          alt="newsweek logo"
-        />
-        <div class="d-flex align-items-center">
-          <button class="login-btn btn btn-outline-secondary border-0">
-            <i class="fas fa-user"></i>
-          </button>
-          <button class="subsc-btn btn btn-warning rounded-pill btn-sm">
-            SUBSCRIBE &gt;
-          </button>
-          <button
-            class="navbar-toggler border-0 btn-sm"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="mobile-header container-fluid navbar navbar-expand-sm navbar-light bg-default d-lg-none fixed-top">
+        <img class="nw-logo" src="./img/newsweek-logo.png" alt="newsweek logo"/>
+            <div class="d-flex align-items-center">
+            <button class="login-btn btn btn-outline-secondary border-0"> <i class="fas fa-user"></i></button>
+            <button class="subsc-btn btn btn-warning rounded-pill btn-sm"> SUBSCRIBE &gt; </button>
+            <button class="navbar-toggler border-0 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-end">
@@ -112,6 +142,726 @@
         </div>
       </div>
     </nav>
+  </div>
+  
+
+
+
+
+    <main class="main container-fluid">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-ms-12 col-md-12 order-md-1 col-lg-6 order-lg-2">
+          <article class="story col-12">
+            <h4 class="text-muted">Top Story</h4>
+            <div class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682593/mitch-mcconnell.webp?w=591&h=364&f=dc09896531f7b39a59023718e6571d3b"
+                class="card-img" alt="McConnell">
+              <div class="card-img-overlay d-flex justify-content-start align-items-end">
+                <h5 class="card-title text-danger font-weight-bold">
+                  u.s
+                </h5>
+              </div>
+            </div>
+            <a href="#" class="font-weight-bold text-body">
+              Mitch McConnell Reportedly Warms to Stimulus Checks as Deal Remains Elusive
+            </a>
+            <p>
+              No current potential stimulus package that is being negotiated on Capitol Hill includes anything like the
+              $1,200 checks
+              that many Americans received under the Cares Act. But McConnell reportedly would not oppose it if the
+              provision is
+              added.
+            </p>
+          </article>  
+          <div class="card h-15">
+            <div class="row ">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682908/bernie-sanders-wearing-face-mask.webp?w=95&h=95&f=71a4bbba6954026adc39d50a76225897"
+                  class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Sanders, Dem Senators Demand Stimulus Checks, Opposes $908 Relief Proposal</h5>
+                  <p class="card-text">The lawmakers in the Senate Democratic Caucus said the leading stimulus proposal
+                    "does not go anywhere near far enough."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- My turn Sec -->
+          <h6 class="col-12 text-muted">MY TURN</h6>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1681275/coronavirus-pandemic-mini-stroke-hospitals.jpg?w=397&amp;h=397&amp;f=ece665acb6b840a4ad0d35977b20dfa7"
+                class="card-img" alt="man in mask">
+              <div class="card-body">
+                <header>
+                  <a href="#">
+                    'I'm 23, I Had a Mini Stroke Days After Contracting COVID'
+                  </a>
+                </header>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1680326/infant-infant-spasms-medical-emergency-baby.png?w=397&amp;h=397&amp;f=74cebbfc50e69c2f9c4835872defed74"
+                class="card-img" alt="crawling baby">
+              <div class="card-body">
+                <header>
+                  <a href="#">
+                    'My Baby Had a Medical Emergency During COVID'
+                  </a>
+                </header>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1680598/genius-gifted-child-black-gifted-child.png?w=397&amp;h=397&amp;f=adf39e37173b5b5fdf35fc63cae274a0"
+                class="card-img" alt="young black boy sitting">
+              <div class="card-body">
+                <header>
+                  <a href="https://www.newsweek.com/100-best-rock-albums-all-time-1532301">
+                    'I'm 12. Next Year I'm Studying Aerospace Engineering at University'
+                  </a>
+                </header>
+              </div>
+            </div>
+          </div>
+            <!-- culture and TRAVEL -->
+          <h6 class="col-12 text-muted">CULTURE AND TRAVEL</h6>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1682551/suv-micro-rv.webp?w=397&amp;h=397&amp;f=71607eddbf7bb620301976f090cfc8f0"
+                class="card-img" alt="">
+              <div class="card-body">
+                <header>
+                  <a href="https://www.newsweek.com/car-glamping-more-accessible-alternative-van-life-1552978">
+                    Is Car Glamping the More Accessible Alternative to Van Life? </a>
+                </header>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1640602/36-dominican-republic.webp?w=397&amp;h=397&amp;f=365c7709609c603fc1b938755877a443"
+                class="card-img" alt="">
+              <div class="card-body">
+                <header>
+                  <a href="#">
+                    These Countries Are the Most Dependent on Tourism </a>
+                </header>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                src="https://d.newsweek.com/en/full/1637742/100-best-rock-albums-all-time.webp?w=397&amp;h=397&amp;f=5f1c21a471dc42bcd8301bff02f64462"
+                class="card-img" alt="">
+              <div class="card-body">
+                <header>
+                  <a href="#">
+                    100 Best Rock Albums of All Time </a>
+                </header>
+              </div>
+            </div>
+          </div>
+          <!-- More stories -->
+          <h4 class="text-muted"> MORE STORIES</h4>
+  
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">U.S. Rejected Offers to Buy More Pfizer COVID Vaccine Shots—ex-FDA Chief</h5>
+                  <p class="card-text"> The company has entered into agreements to supply other countries since it
+                    reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug Administration (FDA) said</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682274/donald-trump.webp?w=95&h=95&f=f9bbbcf7bd0db51e12defa897e753ed2"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="Trump">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Trump's Ambiguous COVID Vaccine Order Aims to Give Americans First Access</h5>
+                  <p class="card-text">According to the White House, the order directs the Secretary of Health and Human
+                    Services to provide priority access to
+                    COVID-19 vaccines to Americans.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682818/ron-johnson.webp?w=95&h=95&f=c3dc8073ec1a60eb1ac9a4c10a6e3c48"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="Republicans">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Republicans Spar Over Inviting COVID Vaccine Skeptic to Senate Hearing</h5>
+                  <p class="card-text">"I think it's nuts to bring that into the Senate," Senator Mitt Romney said.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682814/lara-trump.webp?w=95&h=95&f=94afa3d78818f15859a811febbebc257"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="lara trump">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Lara Trump Top Pick to Succeed Retiring GOP Senator in 2022: Poll</h5>
+                  <p class="card-text">The poll, which was conducted by the BUSR/UNLV Lee Business School, found 24
+                    percent of respondents in North Carolina
+                    supporting Trump, if she decides to run in the state's Republican Senate primary election.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1681879/brandon-bernard.webp?w=95&h=95&f=1c656e5df58d020d99236652e718f29e"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title">Judge Denies Stay Of Execution For Brandon Bernard</h5>
+                  <p class="card-text">U.S. District Court Judge James Sweeney ruled Bernard's execution could go ahead
+                    on Thursday.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img
+                  src="https://d.newsweek.com/en/full/1682461/covid-19-testing-la-california-november-2020.webp?w=95&amp;h=95&amp;f=da4f4c5d5e8ec6ed2476a6c244ac19f1"
+                  alt="covid" class="img-fluid" style="max-height: 95px; max-width: 75px;" alt="">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body">
+                  <h5 class="card-title"> COVID Could Infect Over a Million Americans Per Day by Early January
+                  </h5>
+                  <p class="card-text">
+                    Total active coronavirus cases in the U.S. are projected to reach over 3.9 million by January 10,
+                    according to
+                    forecasts from researchers at the Massachusetts Institute of Technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- finished more stories section -->
+        
+        <div class="order-sm-2 col-ms-12 col-md-12 order-md-2 col-lg-3 order-lg-1">
+          <h4 class="text-muted"> FEATURED STORIES</h4>
+          <div class="content">      
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                class="card-img-top" alt="anthony fauci coronavirus">
+              <h5 class="card-title">U.S</h5>
+              <div class="card-header">
+                <a href="#">Fauci Not Surprised America's Seeing 200,000 New Cases of Coronavirus a Day</a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">In June, Fauci said it was possible America could reach 100,000 cases a day, but he
+                  called
+                  America doubling that amount
+                  "predictable."</p>
+              </div>
+            </article>
+          </div>
+        </div>         
+        <!-- finished the feature section  -->
+        <div class="col-ms-12 col-md-12 order-md-3 col-lg-3 order-lg-3">
+            <h6 class="text-muted"> THE DEBATE </h6>
+            <div class="content">
+          
+              <div class="">
+                <img
+                  src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&amp;h=63&amp;f=3de733b09b3c97b87933e4368ae4e559"
+                  alt="JonathanTobin">
+                <a href="#">
+                  <h5 class="">Should Trump Concede? Yes</h5>
+                </a>
+                <p class="card-text">By Jonathan Tobin</p>
+              </div>
+              <div class="align-center"> <img src="img/VS.png" alt=""> </div>
+              <div>
+                <a href="#">
+                  <h5 class="">Should Trump Concede? Not Yet</h5>
+                </a>
+                <p class="card-text">By Spencer Klavan</p>
+                <img class="float-right"
+                  src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&amp;h=63&amp;f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
+                  alt="Klavin">
+              </div>          
+              <!-- finished the debate section  -->
+
+              <h4 class="text-muted"> OPINION </h4>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+              <div class="">
+                <img src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                  alt="Yoo">
+                <a href="#">
+                  <h5 class="">Progressives Are Wrong To Oppose the Electoral College</h5>
+                </a>
+                <p class="card-text">By John Yoo</p>
+              </div>
+
+              <!--sign up sec -->
+
+              <div class="card">
+              <div class="card-header p-4">
+                <img src="img/n.png" alt="n-logo">
+                <h3>Start your day with our top 5 articles</h4>
+                  <input type="email" class="form-control" placeholder="Email Address">
+                  <a href="#" class="btn btn-danger">FREE SIGN UP</a>
+              </div>
+            </div>
+            <div class="trying">
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1671053/nnovate2.jpg?w=500&amp;h=333&amp;f=7c0fd52aaf6156db616eed42842988db"
+                      class="card-img-top" alt="sponsored partner">
+                    <h5 class="card-title text-muted">SPONSORED BY BERLIN PARTNERS</h5>
+                    <div class="card-header">
+                      <h2><a href="#">Berlin Partners Power NNOVATE</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Berlin has long been a place where new technologies develop at a particularly rapid pace. In the early years, the city
+                      was a special breeding ground for blockchain technology with its subversive flair. Today, the technology has become an
+                      important economic factor with countless use-cases. See the latest in crypto + blockchain and business.</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img src="https://d.newsweek.com/en/full/1649388/schar-school.jpg?w=500&amp;h=333&amp;f=a4440e7504fefcc9e716a51774592db2"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">SPONSORED INSIGHT</h5>
+                    <div class="card-header">
+                      <h2><a href="#">Why are these careers so highly sought after?</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">These are some of the most highly rated careers areas today. How do you get started in them?</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&amp;h=333&amp;f=111d8839cccafaae6c19be7a5c9267ce"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">RANKINGS</h5>
+                    <div class="">
+                      <h2 ><a  href="#">America's Best Nursing Homes 2021</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to help you during this
+                      challenging time.</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&amp;h=333&amp;f=111d8839cccafaae6c19be7a5c9267ce"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">RANKINGS</h5>
+                    <div class="">
+                      <h2><a href="#">America's Best Nursing Homes 2021</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to
+                        help you during this
+                        challenging time.</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&amp;h=333&amp;f=111d8839cccafaae6c19be7a5c9267ce"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">RANKINGS</h5>
+                    <div class="">
+                      <h2><a href="#">America's Best Nursing Homes 2021</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to
+                        help you during this
+                        challenging time.</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1644076/americas-best-nursing-homes-2020.png?w=500&amp;h=333&amp;f=111d8839cccafaae6c19be7a5c9267ce"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">RANKINGS</h5>
+                    <div class="">
+                      <h2><a href="#">America's Best Nursing Homes 2021</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to
+                        help you during this
+                        challenging time.</p>
+                    </div>
+                  </article>
+                  <article class="card">
+                    <img
+                      src="https://d.newsweek.com/en/full/1587568/infection-prevention-products-banner.jpg?w=500&amp;h=333&amp;f=c96d696a017681c45d2f464a2ae0e23d"
+                      class="card-img-top" alt="sponsored INSIGHT">
+                    <h5 class="card-title text-muted">RANKINGS</h5>
+                    <div class="">
+                      <h2><a href="#">Best Infection Prevention Products</a></h2>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">During the coronavirus outbreak, health care is more important than ever. In Newsweek's first Best Health Care series,
+                      we highlight the best infection prevention products.</p>
+                    </div>
+                  </article>
+                  
+            </div>
+          </div>
+         </div>
+      </div>
+      </div>
+
+    </main>
     <!-- Bottom section -->
     <div class="bottom">
     <!-- N in the magazine -->
@@ -1131,6 +1881,7 @@
         </div>
       </div>
     </div>
+
     <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
