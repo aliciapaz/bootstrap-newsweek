@@ -558,6 +558,12 @@ ul li {
 .picks .picks-title {
   color: #ff0600;
   font-size: 1.3rem;
+  border-top: 1px solid #d9d9d9;
+}
+
+/* subscribe cards */
+.subscribe-cards .subscribe-title {
+  color: #ff0600;
 }
 
 /*!
