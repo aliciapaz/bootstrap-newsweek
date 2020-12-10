@@ -1,14 +1,13 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/_reboot";
-
 
 /* variables */ 
 
+
+$primary: #f72210;
+
 $body-bg: #f4f5f6;
-$red-color: #ff0600;
+
+$red-color: #f72210;
+
 $roboto: "Roboto Condensed",sans-serif;
 
 /* mixins */
@@ -69,10 +68,8 @@ ul li {
 }
 
 /* Mobile navbar */
-
-.mobile-navbar .mobile-header {
-    background: $red-color;
-    height: 3rem;
+.firstNav{
+background-color: sl(1, 100%, 50%);
 }
 
 .mobile-navbar .nw-logo {
@@ -160,41 +157,15 @@ ul li {
 
 /* subscribe cards */
 
-.subscribe-cards .card {
-    background-color: $body-bg;
+.subscribe-cards .subscribe-title {
+    color:$red-color;
 }
-
-.subscribe-cards .block-title {
-    color: $red-color;
-}
-
-.subscribe-cards .overlapping-container {
-    position:relative;
-    padding-right: 80px;
-}
-
-.subscribe-cards .top-cover {
-    position: absolute;
-    top: 14px;
-    left: 85px;
-}
-
-.subscribe-cards .newsletter-card {
-    border: 1px solid #d9d9d9;
-}
-
-.newsletter-card .newsletter-img {
-    background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5");
-    background-size: cover;
-    width: 100%;
-    height: 150px;
-    text-align: center;
-}
-
-.newsletter-card .info {
-    padding-top: 12px;
-}
-
-@import "../node_modules/bootstrap/scss/bootstrap";
 
 //trying the sticky position
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/_reboot";
+@import "../node_modules/bootstrap/scss/bootstrap";
