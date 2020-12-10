@@ -161,7 +161,36 @@ background-color: sl(1, 100%, 50%);
     color:$red-color;
 }
 
-//trying the sticky position
+//trying navbar 
+.lastNav {
+    max-width: 65%;
+    margin: 0;    
+}
+
+.firsttNav,
+.lastNav li:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.firsttNav {
+    margin-top: 1.5rem;
+    max-width: 95%
+}
+
+.firsttNav li input {
+    width: 5rem;
+    border: none;
+    margin-left: 1rem;
+}
+
+.firsttNav li i{
+    margin: 0;
+    padding: 0;
+}
+
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/bootstrap/scss/functions";
