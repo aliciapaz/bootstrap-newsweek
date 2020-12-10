@@ -8,7 +8,7 @@
 ![screenshot](./img/Desktop.jpg)
 
 ### Mobile version
-![screenshot](./img/Mobile.jpg)
+![screenshot](img/mobile_live.jpg)
 
 Additional description about the project and its features.
 
