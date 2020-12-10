@@ -507,6 +507,29 @@ ul li {
 }
 
 /* Main section */
+.opinion-author {
+  font-size: 0.8rem;
+}
+
+.top-title {
+  color: #000;
+}
+
+.summary {
+  font-size: 0.8rem;
+}
+
+.story-category, .sponsored-category {
+  background-color: #fff;
+  opacity: 0.85;
+  color: #ff0600;
+  padding: 0.25rem 0.75rem;
+}
+
+.sponsored-category {
+  color: #3581f4;
+}
+
 /*vs decoration */
 .vs-container {
   position: relative;

@@ -102,6 +102,30 @@ ul li {
 
 /* Main section */
 
+.opinion-author {
+    font-size: .8rem;
+}
+
+.top-title {
+    color: #000;
+}
+
+.summary {
+    font-size: .8rem;
+}
+
+.story-category {
+    background-color: #fff;
+    opacity: .85;
+    color: $red-color;
+    padding: .25rem .75rem;
+}
+
+.sponsored-category {
+    @extend .story-category;
+    color: #3581f4;
+}
+
 /*vs decoration */ 
 
 .vs-container {
