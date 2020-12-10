@@ -210,38 +210,49 @@ ul li {
 
 .subscribe-cards .card {
     background-color: $body-bg;
-}
-
-.subscribe-cards .block-title {
+    }
+    
+    .subscribe-cards .block-title {
     color: $red-color;
-}
-
-.subscribe-cards .overlapping-container {
+    }
+    
+    .subscribe-cards .overlapping-container {
     position:relative;
     padding-right: 80px;
-}
-
-.subscribe-cards .top-cover {
+    }
+    
+    .subscribe-cards .top-cover {
     position: absolute;
     top: 14px;
     left: 85px;
-}
-
-.subscribe-cards .newsletter-card {
+    }
+    
+    .subscribe-cards .newsletter-card {
     border: 1px solid #d9d9d9;
-}
-
-.newsletter-card .newsletter-img {
+    }
+    
+    .newsletter-card .newsletter-img {
     background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5");
     background-size: cover;
     width: 100%;
-    height: 150px;
     text-align: center;
-}
-
-.newsletter-card .info {
+    height: 150px;
+    @media only screen and (min-width: 1024px) {
+    height: 339px;
+    width: 100%;
+    padding-right: 5px;
+    }
+    }
+    
+    .newsletter-card .info {
     padding-top: 12px;
-}
+    }
+    
+    .newsletter-form .signup-btn{
+    font-size: .7rem;
+    margin: .3rem .1rem;
+    }
+    
 
 /* footer */ 
 footer {
