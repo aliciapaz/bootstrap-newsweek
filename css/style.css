@@ -507,6 +507,10 @@ ul li {
 }
 
 /* Main section */
+.opinion-author {
+  font-size: 0.8rem;
+}
+
 /*vs decoration */
 .vs-container {
   position: relative;
