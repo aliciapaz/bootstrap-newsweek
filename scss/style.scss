@@ -93,6 +93,37 @@ ul li {
     height: 24px;
 }
 
+//trying navbar 
+.lastNav {
+    max-width: 80%;
+    margin: 0;    
+}
+
+.firsttNav,
+.lastNav li:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.firsttNav {
+    margin-top: 1.5rem;
+    max-width: 95%
+}
+
+.firsttNav li input {
+    width: 5rem;
+    border: none;
+    margin-left: 1rem;
+}
+
+.firsttNav li i{
+    margin: 0;
+    padding: 0;
+}
+
+
 /* N in the Magazine */
 
 /* vs decoration */
@@ -212,34 +243,29 @@ ul li {
     padding-top: 12px;
 }
 
-//trying navbar 
-.lastNav {
-    max-width: 80%;
-    margin: 0;    
+/* footer */ 
+footer {
+    margin-top: 2px;
+    color: #666;
+    font-size: .75rem;
 }
 
-.firsttNav,
-.lastNav li:first-child{
-    color: #000;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+.footer-top .bottom-logo {
+    width: 236px;
 }
 
-.firsttNav {
-    margin-top: 1.5rem;
-    max-width: 95%
+.footer-links {
+    font-size: .8rem;
+    border-top: 1px solid #d9d9d9;
+    padding: .8rem 0 2rem 0;
 }
 
-.firsttNav li input {
-    width: 5rem;
-    border: none;
-    margin-left: 1rem;
-}
-
-.firsttNav li i{
-    margin: 0;
-    padding: 0;
+.footer-links ul li {
+    list-style: none;
+    padding: 0 .5rem;
+    @media only screen and (min-width: 1024px) {
+        border-right: 1px solid #d9d9d9;
+    }
 }
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";

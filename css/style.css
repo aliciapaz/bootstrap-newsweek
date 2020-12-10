@@ -86,6 +86,35 @@ ul li {
   height: 24px;
 }
 
+.lastNav {
+  max-width: 80%;
+  margin: 0;
+}
+
+.firsttNav,
+.lastNav li:first-child {
+  color: #000;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.firsttNav {
+  margin-top: 1.5rem;
+  max-width: 95%;
+}
+
+.firsttNav li input {
+  width: 5rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.firsttNav li i {
+  margin: 0;
+  padding: 0;
+}
+
 /* N in the Magazine */
 /* vs decoration */
 .vs-container {
@@ -200,33 +229,31 @@ ul li {
   padding-top: 12px;
 }
 
-.lastNav {
-  max-width: 80%;
-  margin: 0;
+/* footer */
+footer {
+  margin-top: 2px;
+  color: #666;
+  font-size: 0.75rem;
 }
 
-.firsttNav,
-.lastNav li:first-child {
-  color: #000;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
+.footer-top .bottom-logo {
+  width: 236px;
 }
 
-.firsttNav {
-  margin-top: 1.5rem;
-  max-width: 95%;
+.footer-links {
+  font-size: 0.8rem;
+  border-top: 1px solid #d9d9d9;
+  padding: 0.8rem 0 2rem 0;
 }
 
-.firsttNav li input {
-  width: 5rem;
-  border: none;
-  margin-left: 1rem;
+.footer-links ul li {
+  list-style: none;
+  padding: 0 0.5rem;
 }
-
-.firsttNav li i {
-  margin: 0;
-  padding: 0;
+@media only screen and (min-width: 1024px) {
+  .footer-links ul li {
+    border-right: 1px solid #d9d9d9;
+  }
 }
 
 *,
