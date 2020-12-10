@@ -13,165 +13,167 @@
     <title>Newsweek</title>
   </head>
   <body>
-    <div>
-      <!-- main navbar-->
-      <div
-        class="container-fluid d-none d-lg-block d-xl-block d-xxl-block navbar-expand-xl navbar-expand-xxl"
-      >
-        <nav
-          class="desktop-navbar navbar navbar-expand-lg navbar-expand-xl d-flex flex-column"
-        >
-          <header class="d-flex container-fluid navbar-light">
-            <div>
-              <div><i class="fas fa-cloud-sun"></i> 28° Santiago, CL</div>
-              <div>Mon, Dec 07, 2020</div>
+    <!-- main navbar-->
+    <div class="container-fluid mx-auto bg-primary navbar-custom d-none d-lg-block d-xl-block sticky-top mw-80">
+      <nav class="row">
+        <aside class="col-4">
+          <div class="m-3 text-white">
+            <div class="m-2 font-weight-bold">
+              <i class="fas fa-cloud-sun font-weight-bold"></i> 34° MADINAH, SA
+              &gt;
             </div>
-            <div>
-              <img
-                class="nw-logo"
-                src="./img/newsweek-logo.png"
-                alt="newsweek logo"
-              />
-            </div>
-            <div class="col2">
-              <button>LOGIN</button>
-              <button class="subsc-btn btn btn-warning rounded-pill btn-sm">
-                SUBSCRIBE &gt;
-              </button>
-            </div>
-          </header>
-          <div class="d-flex">
-            <ul class="d-flex">
-              <li><a href="#">U.S.</a></li>
-              <li><a href="#">World</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Tech & Science</a></li>
-              <li><a href="#">Culture</a></li>
-              <li><a href="#">Newsgeek</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Health</a></li>
-              <li><a href="#">The Debate</a></li>
-              <li><a href="#">Vantage</a></li>
-              <li><a href="#">Weather</a></li>
-            </ul>
-            <form>
-              <label>Search</label>
-              <input type="text" placeholder="Search" />
-              <i class="fas fa-search"></i>
-            </form>
+            <div class="m-3">Wed, Dec 09, 2020</div>
           </div>
+        </aside>
+        <aside class="col-5 mt-3">
           <div>
-            <ul class="d-flex">
-              <li><a href="#">TRENDING</a></li>
-              <li><a href="#">JOE BIDEN</a></li>
-              <li><a href="#">DONALD TRUMP</a></li>
-              <li><a href="#">2020 ELECTION</a></li>
-              <li><a href="#">CORONAVIRUS</a></li>
-              <li><a href="#">STIMULUS PACKAGE</a></li>
-            </ul>
+            <img class="img-fluid" src="img/hugelogo.png" alt="logo" />
           </div>
-        </nav>
-      </div>
-      <!-- mobile navbar -->
-      <nav class="mobile-navbar container-fluid">
-        <div
-          class="mobile-header container-fluid navbar navbar-expand-sm navbar-light bg-default d-lg-none fixed-top"
-        >
-          <img
-            class="nw-logo"
-            src="./img/newsweek-logo.png"
-            alt="newsweek logo"
-          />
-          <div class="d-flex align-items-center">
-            <button class="login-btn btn btn-outline-secondary border-0">
-              <i class="fas fa-user"></i>
-            </button>
-            <button class="subsc-btn btn btn-warning rounded-pill btn-sm">
+        </aside>
+        <aside class="col-3">
+          <div class="row justify-content-center mt-5">
+            <h4 class="row justify-content-center col-5" style="color: white">
+              LOGIN
+            </h4>
+            <button class="col-6 subsc-btn btn btn-warning rounded-pill btn-sm">
               SUBSCRIBE &gt;
             </button>
-            <button
-              class="navbar-toggler border-0 btn-sm"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
           </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-end">
-              <li class="navbar-item">
-                <form class="form-search">
-                  <input
-                    type="text"
-                    class="input-search border-0"
-                    name="search"
-                    placeholder="Search"
-                  />
-                  <i class="fas fa-search fa-lg"></i>
-                </form>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">U.S.</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">World</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Business</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Tech & Science</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Culture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Newsgeek</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Sports</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Health</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">The Debate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Vantage</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Weather</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Trending</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">Joe Biden</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">Donald Trump</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">2020 Election</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">Coronavirus</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-muted" href="#"
-                  >Stimulus Package</a
-                >
-              </li>
-            </ul>
-          </div>
+        </aside>
+      </nav>
+    </div>
+    <div class="container-fluid mx-auto d-none d-lg-block d-xl-block mw-80">
+      <nav class="d-flex flex-column">
+        <div class="mt-10">
+          <ul class="firsttNav d-flex justify-content-between list-unstyled">
+            <li><a href="#">U.S.</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Tech & Science</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Newsgeek</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">The Debate</a></li>
+            <li><a href="#">Vantage</a></li>
+            <li>
+              <a href="#">Weather</a><input type="text" placeholder="Search" />
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid">
+          <ul class="lastNav d-flex justify-content-between list-unstyled">
+            <li>TRENDING</li>
+            <li><a href="#">JOE BIDEN</a></li>
+            <li><a href="#">DONALD TRUMP</a></li>
+            <li><a href="#">2020 ELECTION</a></li>
+            <li><a href="#">CORONAVIRUS</a></li>
+            <li><a href="#">STIMULUS PACKAGE</a></li>
+          </ul>
         </div>
       </nav>
     </div>
+
+    <!-- mobile navbar -->
+    <nav class="mobile-navbar container-fluid">
+      <div
+        class="mobile-header container-fluid navbar navbar-light bg-default d-lg-none fixed-top"
+      >
+        <img
+          class="nw-logo"
+          src="./img/newsweek-logo.png"
+          alt="newsweek logo"
+        />
+        <div class="d-flex align-items-center">
+          <button class="login-btn btn btn-outline-secondary border-0">
+            <i class="fas fa-user"></i>
+          </button>
+          <button class="subsc-btn btn btn-warning rounded-pill btn-sm">
+            SUBSCRIBE &gt;
+          </button>
+          <button
+            class="navbar-toggler border-0 btn-sm"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="navbar-item">
+              <form class="form-search">
+                <input
+                  type="text"
+                  class="input-search border-0"
+                  name="search"
+                  placeholder="Search"
+                />
+                <i class="fas fa-search fa-lg"></i>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tech & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Weather</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Joe Biden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Donald Trump</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">2020 Election</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Coronavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#"
+                >Stimulus Package</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- main section -->
     <main class="main container-fluid">
       <div class="container-fluid">
@@ -1052,21 +1054,29 @@
               <div class="card m-3">
                 <div class="card-header p-4">
                   <div class="d-flex align-items-center">
-                    <img class="m-1" src="img/n.png" alt="n-logo" height="40" width="45"/>
-                    <h6 class="fw-bold">START YOUR DAY WITH OUR TOP 5 ARTICLES</h6>
+                    <img
+                      class="m-1"
+                      src="img/n.png"
+                      alt="n-logo"
+                      height="40"
+                      width="45"
+                    />
+                    <h6 class="fw-bold">
+                      START YOUR DAY WITH OUR TOP 5 ARTICLES
+                    </h6>
                   </div>
                   <div
-                  class="newsletter-form form d-flex flex-lg-column justify-content-center"
-                >
-                  <input
-                    class="signup-btn"
-                    type="email"
-                    placeholder="Email address"
-                  />
-                  <a href="#" class="btn btn-danger signup-btn"
-                    >FREE SIGN UP &gt;</a
+                    class="newsletter-form form d-flex flex-lg-column justify-content-center"
                   >
-                </div>
+                    <input
+                      class="signup-btn"
+                      type="email"
+                      placeholder="Email address"
+                    />
+                    <a href="#" class="btn btn-danger signup-btn"
+                      >FREE SIGN UP &gt;</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="trying">
@@ -1240,7 +1250,6 @@
                     prioritize, and that's worth recognizing in 2021
                   </p>
                 </article>
-                
               </div>
             </div>
           </div>
