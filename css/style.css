@@ -12,7 +12,15 @@ body a {
   text-decoration: none;
 }
 
-body h2, body .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+body h2, body .h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: "Roboto Condensed", sans-serif;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 900;
@@ -86,6 +94,31 @@ ul li {
   height: 24px;
 }
 
+/* Main section */
+/* Main section */
+.opinion-author {
+  font-size: 0.8rem;
+}
+
+.top-title {
+  color: #000;
+}
+
+.summary {
+  font-size: 0.8rem;
+}
+
+.story-category, .sponsored-category {
+  background-color: #fff;
+  opacity: 0.85;
+  color: #ff0600;
+  padding: 0.25rem 0.75rem;
+}
+
+.sponsored-category {
+  color: #3581f4;
+}
+
 .lastNav {
   max-width: 80%;
   margin: 0;
@@ -115,7 +148,6 @@ ul li {
   padding: 0;
 }
 
-/* N in the Magazine */
 /* vs decoration */
 .vs-container {
   position: relative;
@@ -142,6 +174,7 @@ ul li {
   margin-top: 5rem;
 }
 
+/* N in the Magazine */
 .magazine .n-icon,
 .editor .n-icon {
   display: block;
