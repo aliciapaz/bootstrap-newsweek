@@ -1896,37 +1896,36 @@
       </div>
     </div>
     <!-- Subscribe cards -->
-    <div class="subscribe-cards container-fluid p-sm-4 p-md-4 p-lg-4">
+    <div class="subscribe-cards container-fluid p-4 p-md-4 p-lg-4 mt-3">
       <div class="row mx-lg-4">
-        <div class="col d-flex flex-column col-md-7 col-lg-8">
+        <!-- subscribe card-->
+        <div class="col d-flex flex-column col-lg-8">
           <div class="block-title fs-6">
             <a href="#">SUBSCRIBE</a>
           </div>
           <div
-            class="card flex-sm-column flex-md-row flex-lg-row p-sm-5 p-md-5 p-lg-5 border-0"
+            class="card flex-column flex-md-row flex-lg-row p-sm-5 p-md-5 p-lg-5 border-0"
           >
-            <div class="image overlapping-container mx-auto mt-sm-4">
+            <div class="image overlapping-container mx-auto mt-4 mt-lg-1">
               <div class="behind-cover">
                 <img
-                  class="lazyloaded"
                   src="https://d.newsweek.com/en/full/1671676/cover-november-27-2020.jpg?w=170&amp;q=95&amp;f=58167a570fb61a0b8203f0526bc45eca"
                   alt="magazine white cover"
                 />
               </div>
               <div class="top-cover">
                 <img
-                  class="lazyloaded"
                   src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a"
                   alt="magazine red cover"
                 />
               </div>
             </div>
-            <div class="card-body text-sm-center">
+            <div class="card-body text-center text-md-start">
               <h5 class="card-title">
                 In-depth Stories You Don't See Elsewhere About Topics You Want
                 to Read!
               </h5>
-              <p class="card-text text-sm-center">
+              <p class="card-text">
                 All Access + Weekly Delivery. Choose A Membership That's Perfect
                 for You!
               </p>
@@ -1934,7 +1933,8 @@
             </div>
           </div>
         </div>
-        <div class="col d-flex flex-column col-md-5 col-lg-4">
+        <!--newsletter card-->
+        <div class="col d-flex flex-column col-lg-4">
           <div class="block-title fs-6">
             <a href="#">NEWSLETTER</a>
           </div>
@@ -1942,14 +1942,14 @@
             <div class="image newsletter-img">
             </div>
             <div class="info d-flex flex-column p-lg-3">
-              <h5 class="card-title text-center">The Starting 5</h5>
-              <p class="card-text text-center">
+              <h5 class="card-title text-center text-md-start">The Starting 5</h5>
+              <p class="card-text text-center text-md-start">
                 See why nearly a quarter of a million subscribers begin their
                 day with the Starting 5.
               </p>
-              <div class="form d-sm-flex">
-                <input class="flex-shrink-1" type="email" placeholder="Email address" />
-                <a href="#" class="btn btn-danger fs-6">FREE SIGN UP &gt;</a>
+              <div class="newsletter-form form d-flex flex-lg-column justify-content-center">
+                <input class="signup-btn" type="email" placeholder="Email address" />
+                <a href="#" class="btn btn-danger signup-btn">FREE SIGN UP &gt;</a>
               </div>
             </div>
           </div>
@@ -1957,11 +1957,11 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="container-fluid">
-      <div class="footer-top d-flex flex-column flex-lg-row flex-xl-row justify-content-between py-3">
-        <div class="d-flex flex-column flex-lg-row flex-xl-row align-items-baseline">
+    <footer class="container-fluid mt-4 mt-md-1 mt-lg-1">
+      <div class="footer-top d-flex flex-column flex-md-row justify-content-between py-3">
+        <div class="d-flex flex-column flex-md-row align-items-md-end">
           <div><img class="bottom-logo" src="./img/newsweek-red.png" alt="newsweek red logo"></div>
-          <div class="legal">© 2020 NEWSWEEK DIGITAL LLC</div>
+          <div class="legal pb-1">© 2020 NEWSWEEK DIGITAL LLC</div>
         </div>
         <div class="footer-social d-flex flex-row">
           <i class="m-2 fs-4 fab fa-facebook-square"></i>
@@ -1969,6 +1969,34 @@
           <i class="m-2 fs-4 fab fa-instagram"></i>
           <i class="m-2 fs-4 fab fa-tumblr"></i>
           <i class="m-2 fs-4 fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-edition d-flex">
+          <div class="fw-bold">Edition</div>
+          <ul class="d-flex flex-wrap">
+            <li><a href="#">U.S Edition</a></li>
+            <li><a href="#">日本</a></li>
+            <li><a href="#">Pakistan</a></li>
+            <li><a href="#">Polska</a></li>
+            <li><a href="#">România</a></li>
+          </ul>
+        </div>
+        <div class="about">
+          <ul class="about-links d-flex flex-wrap">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Corrections</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Terms of Sale</a></li>
+            <li><a href="#">Archive</a></li>
+            <li><a href="#">Announcements</a></li>
+          </ul>
         </div>
       </div>
     </footer>
