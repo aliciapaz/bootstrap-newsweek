@@ -29,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: $roboto;
+
   @include section-title;
 }
 
@@ -91,6 +92,7 @@ ul li {
 
 .mobile-navbar .subsc-btn {
   @include section-title;
+
   font-size: 0.6rem;
   background-color: #ffe400;
   height: 24px;
@@ -121,6 +123,7 @@ ul li {
 
 .sponsored-category {
   @extend .story-category;
+
   color: #3581f4;
 }
 
@@ -267,6 +270,7 @@ ul li {
   width: 100%;
   text-align: center;
   height: 150px;
+
   @media only screen and (min-width: 1024px) {
     height: 339px;
     width: 100%;
@@ -300,9 +304,10 @@ footer {
   padding: 0.8rem 0 2rem 0;
 }
 
-.footer-links ul li {
+.footer-links .about-link {
   list-style: none;
   padding: 0 0.5rem;
+
   @media only screen and (min-width: 1024px) {
     border-right: 1px solid #d9d9d9;
   }
@@ -313,6 +318,4 @@ footer {
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/_reboot";
-@import "../node_modules/bootstrap/scss/bootstrap";
-
 @import "../node_modules/bootstrap/scss/bootstrap";
