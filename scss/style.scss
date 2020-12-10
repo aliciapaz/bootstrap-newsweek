@@ -1,6 +1,13 @@
+// @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/_reboot";
+
 
 /* variables */ 
 
+$primary: #f72210;
 $body-bg: #f4f5f6;
 $red-color: #ff0600;
 $roboto: "Roboto Condensed",sans-serif;
@@ -49,12 +56,11 @@ h5:hover {
 }
 
 ul li {
-    list-style-type: none;
     padding-left: 0;
 }
 
 .container-fluid {
-    max-width: 1312px;
+    max-width: 1310px;
     background-color: #fff;
 }
 
@@ -92,55 +98,6 @@ ul li {
     font-size: .6rem;
     background-color: #ffe400;
     height: 24px;
-}
-
-/* Main section */
-
-.opinion-author {
-    font-size: .8rem;
-}
-
-.top-title {
-    color: #000;
-}
-
-.summary {
-    font-size: .8rem;
-}
-
-.story-category {
-    background-color: #fff;
-    opacity: .85;
-    color: $red-color;
-    padding: .25rem .75rem;
-}
-
-.sponsored-category {
-    @extend .story-category;
-    color: #3581f4;
-}
-
-/*vs decoration */ 
-
-.vs-container {
-    position: relative;
-}
-
-.vs-container hr {
-    border-top: 1px solid #8c8c8c;
-    border-bottom: 1px solid #8c8c8c;
-    z-index: 1;
-}
-
-.vs-container .vs-icon {
-    position: absolute;
-    z-index: 10;
-    left: 45%;
-    top: -14px;
-    border-radius: 50%;
-    padding: 3px;
-    color: #fff;
-    background-color: #000;
 }
 
 /* N in the Magazine */
@@ -231,49 +188,43 @@ ul li {
     background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5");
     background-size: cover;
     width: 100%;
-    text-align: center;
     height: 150px;
-    @media only screen and (min-width: 1024px) {
-        height: 339px;
-        width: 100%;
-        padding-right: 5px;
-    }
+    text-align: center;
 }
 
 .newsletter-card .info {
     padding-top: 12px;
 }
 
-.newsletter-form .signup-btn{
-    font-size: .7rem;
-    margin: .3rem .1rem;
+//trying navbar 
+.lastNav {
+    max-width: 65%;
+    margin: 0;    
 }
 
-/* footer */ 
-footer {
-    margin-top: 2px;
-    color: #666;
-    font-size: .75rem;
+.firsttNav,
+.lastNav li:first-child{
+    color: #000;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
 }
 
-.footer-top .bottom-logo {
-    width: 236px;
+.firsttNav {
+    margin-top: 1.5rem;
+    max-width: 95%
 }
 
-.footer-links {
-    font-size: .8rem;
-    border-top: 1px solid #d9d9d9;
-    padding: .8rem 0 2rem 0;
+.firsttNav li input {
+    width: 5rem;
+    border: none;
+    margin-left: 1rem;
 }
 
-.footer-links ul li {
-    padding: 0 .5rem;
-    @media only screen and (min-width: 1024px) {
-        border-right: 1px solid #d9d9d9;
-    }
+.firsttNav li i{
+    margin: 0;
+    padding: 0;
 }
-
-
 
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -282,3 +233,6 @@ footer {
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/_reboot";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
