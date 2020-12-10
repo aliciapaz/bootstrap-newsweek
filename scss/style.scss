@@ -1,10 +1,3 @@
-// @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// @import "../node_modules/bootstrap/scss/functions";
-// @import "../node_modules/bootstrap/scss/variables";
-// @import "../node_modules/bootstrap/scss/mixins";
-// @import "../node_modules/bootstrap/scss/_reboot";
-
-
 /* variables */ 
 
 $primary: #f72210;
@@ -101,6 +94,29 @@ ul li {
 }
 
 /* N in the Magazine */
+
+/* vs decoration */
+
+.vs-container {
+    position: relative;
+    }
+    
+    .vs-container hr {
+    border-top: 1px solid #8c8c8c;
+    border-bottom: 1px solid #8c8c8c;
+    z-index: 1;
+    }
+    
+    .vs-container .vs-icon {
+    position: absolute;
+    z-index: 10;
+    left: 45%;
+    top: -14px;
+    border-radius: 50%;
+    padding: 3px;
+    color: #fff;
+    background-color: #000;
+    }
 
 .bottom {
     margin-top:5rem; // only while developing, don't forget to remove this later
@@ -225,7 +241,6 @@ ul li {
     margin: 0;
     padding: 0;
 }
-
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/bootstrap/scss/functions";
