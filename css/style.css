@@ -542,6 +542,24 @@ ul li {
   color: #3581f4;
 }
 
+/* mobile version */
+@media only screen and (max-width: 414px) {
+  .mobile-display {
+    display: block;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .mobile-display {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .main-section {
+    display: none;
+  }
+}
+
 .nav-container {
   background-color: #f72210;
 }

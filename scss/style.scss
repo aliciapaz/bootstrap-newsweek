@@ -135,6 +135,24 @@ ul li {
   color: #3581f4;
 }
 
+/* mobile version */
+
+.mobile-display {
+  @media only screen and (max-width: 414px) {
+    display: block;
+  }
+
+  @media only screen and (min-width: 414px) {
+    display: none;
+  }
+}
+
+.main-section {
+  @media only screen and (max-width: 414px) {
+    display: none;
+  }
+}
+
 //trying navbar
 
 .nav-container {
