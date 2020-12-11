@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Newsweek</title>
+  </head>
+  <body>
+    <!-- main navbar-->
+    <div class="nav-container container-fluid mx-auto navbar-custom d-none d-lg-block d-xl-block sticky-top mw-80">
+      <nav class="row">
+        <aside class="col-4">
+          <div class="m-3 text-white">
+            <div class="m-2 fw-bold">
+              <i class="fas fa-cloud-sun"></i> 34° Madinah, SA
+              &gt;
+            </div>
+            <div class="m-3">Wed, Dec 09, 2020</div>
+          </div>
+        </aside>
+        <aside class="col-5 mt-3">
+          <div>
+            <img class="img-fluid" src="./img/hugelogo.png" alt="logo"/>
+          </div>
+        </aside>
+        <aside class="col-3">
+          <div class="row justify-content-center mt-5">
+            <h4 class="row justify-content-center col-5" style="color: white">
+              LOGIN
+            </h4>
+            <button class="col-6 subsc-btn btn btn-warning rounded-pill btn-sm fw-bold">
+              SUBSCRIBE &gt;
+            </button>
+          </div>
+        </aside>
+      </nav>
+    </div>
+    <div class="container-fluid mx-auto d-none d-lg-block d-xl-block mw-80">
+      <nav class="d-flex flex-column">
+        <div class="mt-10">
+          <ul class="firsttNav d-flex justify-content-between list-unstyled">
+            <li class="border-end border-1 pe-1"><a href="#">U.S.</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">World</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Business</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Tech & Science</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Culture</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Newsgeek</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Sports</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Health</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">The Debate</a></li>
+            <li class="border-end border-1 pe-1"><a href="#">Vantage</a></li>
+            <li>
+              <a class="border-end border-1 pe-1" href="#">Weather</a><input type="text" placeholder="Search" />
+              <i class="fas fa-search"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid border-bottom border-5 mb-2">
+          <ul class="lastNav d-flex justify-content-between list-unstyled">
+            <li><h6 class="fw-bold">TRENDING</h6></li>
+            <li><h6 class="text-muted fw-bold"><a href="#">JOE BIDEN</a></h6></li>
+            <li><h6 class="text-muted fw-bold"><a href="#">DONALD TRUMP</a></h6></li>
+            <li><h6 class="text-muted fw-bold"><a href="#">2020 ELECTION</a></h6></li>
+            <li><h6 class="text-muted fw-bold"><a href="#">CORONAVIRUS</a></h6></li>
+            <li><h6 class="text-muted fw-bold"><a href="#">STIMULUS PACKAGE</a></h6></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- mobile navbar -->
+    <nav class="mobile-navbar sticky-top">
+      <div
+        class="mobile-header container-fluid navbar navbar-light d-flex flex-nowrap bg-default d-lg-none"
+      >
+        <img
+          class="nw-logo"
+          src="./img/newsweek-logo.png"
+          alt="newsweek logo"
+        />
+        <div class="d-flex flex-shrink-1 align-items-center">
+          <button class="login-btn btn btn-outline-secondary border-0">
+            <i class="fas fa-user"></i>
+          </button>
+          <button class="subsc-btn btn btn-warning rounded-pill btn-sm  text-nowrap">
+            SUBSCRIBE &gt;
+          </button>
+          <button
+            class="navbar-toggler border-0 btn-sm"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="navbar-item">
+              <form class="form-search">
+                <input
+                  type="text"
+                  class="input-search border-0"
+                  name="search"
+                  placeholder="Search"
+                />
+                <i class="fas fa-search fa-lg"></i>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tech & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Weather</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Joe Biden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Donald Trump</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">2020 Election</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#">Coronavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-muted" href="#"
+                >Stimulus Package</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- main section -->
+    <main class="main container-fluid">
+      <div class="main-section container-fluid">
+        <div class="row">
+          <!-- center column -->
+          <div class="col-ms-12 col-md-6 order-md-2 col-lg-6 order-lg-2">
+            <article class="story col-12">
+              <h6 class="text-muted fw-bold">TOP STORY</h6>
+              <div class="position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682593/mitch-mcconnell.webp?w=591&h=364&f=dc09896531f7b39a59023718e6571d3b"
+                  class="img-fluid"
+                  alt="McConnell"
+                />
+                <div
+                  class="story-category block-title position-absolute bottom-0 start-0"
+                >
+                  U.S.
+                </div>
+              </div>
+              <h4 class="top-title mt-2">
+                <a href="#" class="font-weight-bold text-body">
+                  Mitch McConnell Reportedly Warms to Stimulus Checks as Deal
+                  Remains Elusive
+                </a>
+              </h4>
+              <p class="summary">
+                No current potential stimulus package that is being negotiated
+                on Capitol Hill includes anything like the $1,200 checks that
+                many Americans received under the Cares Act. But McConnell
+                reportedly would not oppose it if the provision is added.
+              </p>
+            </article>
+            <div class="card h-15 d-none">
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682908/bernie-sanders-wearing-face-mask.webp?w=95&h=95&f=71a4bbba6954026adc39d50a76225897"
+                    class="img-fluid"
+                    style="max-height: 95px; max-width: 75px"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Sanders, Dem Senators Demand Stimulus Checks, Opposes $908
+                      Relief Proposal
+                    </h5>
+                    <p class="card-text">
+                      The lawmakers in the Senate Democratic Caucus said the
+                      leading stimulus proposal "does not go anywhere near far
+                      enough."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- My turn Sec and Culture and Travel Sections-->
+            <div class="turn-culture">
+              <h6 class="col-12 text-muted fw-bold">MY TURN</h6>
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1681275/coronavirus-pandemic-mini-stroke-hospitals.jpg?w=397&amp;h=397&amp;f=ece665acb6b840a4ad0d35977b20dfa7"
+                    class="img-fluid mb-3"
+                    alt="man in mask"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#">
+                      'I'm 23, I Had a Mini Stroke Days After Contracting COVID'
+                    </a>
+                  </h6>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1680326/infant-infant-spasms-medical-emergency-baby.png?w=397&amp;h=397&amp;f=74cebbfc50e69c2f9c4835872defed74"
+                    class="img-fluid mb-3"
+                    alt="crawling baby"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#">
+                      'My baby had a medical emergency during COVID'
+                    </a>
+                  </h6>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1680598/genius-gifted-child-black-gifted-child.png?w=397&amp;h=397&amp;f=adf39e37173b5b5fdf35fc63cae274a0"
+                    class="img-fluid mb-3"
+                    alt="young black boy sitting"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#">
+                      'I'm 12. Next Year I'm Studying Aerospace Engineering at
+                      University'
+                    </a>
+                  </h6>
+                </div>
+              </div>
+              <!-- culture and TRAVEL -->
+              <h6 class="col-12 text-muted fw-bolder">CULTURE AND TRAVEL</h6>
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1682551/suv-micro-rv.webp?w=397&amp;h=397&amp;f=71607eddbf7bb620301976f090cfc8f0"
+                    class="img-fluid mb-3"
+                    alt="man in mask"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#">
+                      Is Car Glamping the More Accessible Alternative to Van Life?
+                    </a>
+                  </h6>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1640602/36-dominican-republic.webp?w=397&amp;h=397&amp;f=365c7709609c603fc1b938755877a443"
+                    class="img-fluid mb-3"
+                    alt="crawling baby"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#">
+                      These Countries Are the Most Dependent on Tourism
+                    </a>
+                  </h6>
+                </div>
+                <div class="col-12 col-md-4 col-lg">
+                  <img
+                    src="https://d.newsweek.com/en/full/1637742/100-best-rock-albums-all-time.webp?w=397&amp;h=397&amp;f=5f1c21a471dc42bcd8301bff02f64462"
+                    class="img-fluid mb-3"
+                    alt="young black boy sitting"
+                  />
+                  <h6 class="text-muted fw-bold">
+                    <a href="#"> 100 Best Rock Albums of All Time </a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- More stories -->
+            <div class="more-stories">
+              <h6 class="text-muted fw-bolder mt-3">MORE STORIES</h6>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+              <div class="border-top py-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                  alt="rejection"
+                  class="float-start m-1"
+                  style="height: 95px; width: 95px"
+                />
+                <h5 class="card-title">
+                  U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                  Shots—ex-FDA Chief
+                </h5>
+                <p class="summary">
+                  The company has entered into agreements to supply other
+                  countries since it reported promising results for its vaccine
+                  contender, Scott Gottlieb, the head of the Food and Drug
+                  Administration (FDA) said
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- finished more stories section -->
+
+          <!-- left column -->
+          <div class="order-sm-2 col-ms-12 col-md-6 order-md-1 col-lg-3 order-lg-1"
+          >
+            <h6 class="text-muted fw-bold">FEATURED STORIES</h6>
+            <div class="content">
+              <article class="card border-0">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="story-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    POLITICS
+                  </div>
+                </div>
+                <h4 class="top-title mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    Fauci Not Surprised America's Seeing 200,000 New Cases of
+                    Coronavirus a Day
+                  </a>
+                </h4>
+                <p class="summary">
+                  In June, Fauci said it was possible America could reach
+                  100,000 cases a day, but he called America doubling that
+                  amount "predictable."
+                </p>
+              </article>
+              <article class="card border-0">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="story-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    POLITICS
+                  </div>
+                </div>
+                <h4 class="top-title mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    Fauci Not Surprised America's Seeing 200,000 New Cases of
+                    Coronavirus a Day
+                  </a>
+                </h4>
+                <p class="summary">
+                  In June, Fauci said it was possible America could reach
+                  100,000 cases a day, but he called America doubling that
+                  amount "predictable."
+                </p>
+              </article>
+              <article class="card border-0">
+                <div class="position-relative">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1682044/anthony-fauci-coronavirus.jpg?w=397&amp;h=265&amp;l=41&amp;t=47&amp;q=90&amp;f=78e9102ab15c8d8943645220efadfaca"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="story-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    POLITICS
+                  </div>
+                </div>
+                <h4 class="top-title mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    Fauci Not Surprised America's Seeing 200,000 New Cases of
+                    Coronavirus a Day
+                  </a>
+                </h4>
+                <p class="summary">
+                  In June, Fauci said it was possible America could reach
+                  100,000 cases a day, but he called America doubling that
+                  amount "predictable."
+                </p>
+              </article>
+              <article class="card border-1 my-3">
+                <div class="position-relative border-1">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1677215/australian-international-school-phnom-penh-aispp.jpg?w=500&amp;h=333&amp;f=f930a53edccc6fc9da989a700f287137"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    SPONSORED INSIGHT
+                  </div>
+                </div>
+                <h4 class="top-title p-1 px-lg-3 mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    Why are these careers so highly sought after?
+                  </a>
+                </h4>
+                <p class="summary p-1 px-lg-3">
+                  These are some of the most highly rated careers areas today.
+                  How do you get started in them?
+                </p>
+              </article>
+              <article class="card border-1 my-3">
+                <div class="position-relative border-1">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1677215/australian-international-school-phnom-penh-aispp.jpg?w=500&amp;h=333&amp;f=f930a53edccc6fc9da989a700f287137"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    SPONSORED INSIGHT
+                  </div>
+                </div>
+                <h4 class="top-title p-1 px-lg-3 mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    Why are these careers so highly sought after?
+                  </a>
+                </h4>
+                <p class="summary p-1 px-lg-3">
+                  These are some of the most highly rated careers areas today.
+                  How do you get started in them?
+                </p>
+              </article>
+              <article class="card border-1 my-3">
+                <div class="position-relative border-1">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0"
+                    alt="most responsible companies 2021"
+                  />
+                  <div
+                    class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    RANKINGS
+                  </div>
+                </div>
+                <h4 class="top-title p-1 px-lg-3 mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    America's Most Responsible Companies 2021
+                  </a>
+                </h4>
+                <p class="summary p-1 px-lg-3">
+                  We partnered with Statista to rank the country's Most
+                  Responsible Companies. They share the values that we all
+                  prioritize, and that's worth recognizing in 2021
+                </p>
+              </article>
+              <article class="card border-1 my-3">
+                <div class="position-relative border-1">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0"
+                    alt="most responsible companies 2021"
+                  />
+                  <div
+                    class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    RANKINGS
+                  </div>
+                </div>
+                <h4 class="top-title p-1 px-lg-3 mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    America's Most Responsible Companies 2021
+                  </a>
+                </h4>
+                <p class="summary p-1 px-lg-3">
+                  We partnered with Statista to rank the country's Most
+                  Responsible Companies. They share the values that we all
+                  prioritize, and that's worth recognizing in 2021
+                </p>
+              </article>
+            </div>
+          </div>
+          <!-- finished the feature section  -->
+          <!-- right column-->
+          <!-- the debate section -->
+          <div class="col-ms-12 col-md-12 order-md-3 col-lg-3 order-lg-3">
+            <h6 class="text-muted fw-bolder">THE DEBATE</h6>
+            <div class="content">
+              <div class="d-flex border-top border-5 pt-2">
+                <div class="px-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&amp;h=63&amp;f=3de733b09b3c97b87933e4368ae4e559"
+                    alt="JonathanTobin"
+                  />
+                </div>
+                <div>
+                  <a href="#">
+                    <h5 class="">Should Trump Concede? Yes</h5>
+                  </a>
+                  <p class="card-text text-muted opinion-author">
+                    By<strong class="text-muted">&nbsp;JONATHAN COBIN</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="vs-container align-center">
+                <div class="vs-icon">VS</div>
+                <hr />
+              </div>
+              <div class="d-flex border-bottom border-4 pb-2">
+                <div>
+                  <a href="#">
+                    <h5 class="">Should Trump Concede? Not Yet</h5>
+                  </a>
+                  <p class="card-text text-muted opinion-author">
+                    By<strong class="text-muted">&nbsp;SPENCER KAVAN</strong>
+                  </p>
+                </div>
+                <div class="px-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&amp;h=63&amp;f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
+                    alt="Klavin"
+                  />
+                </div>
+              </div>
+              <!-- finished the debate section  -->
+
+              <h5 class="text-muted mt-3">OPINION</h5>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex border-bottom pb-2 mb-2">
+                <div class="mx-2">
+                  <img
+                    src="https://d.newsweek.com/en/full/1602798/john-yoo.webp?w=63&amp;h=63&amp;f=be547c5341c163ae6b8848928996b6d1"
+                    alt="Yoo"
+                  />
+                </div>
+                <div class="d-flex flex-column">
+                  <a href="#">
+                    <h5 class="">
+                      Progressives Are Wrong To Oppose the Electoral College
+                    </h5>
+                  </a>
+                  <p class="card-text opinion-author text-muted fw-bold">
+                    BY JOHN WOO
+                  </p>
+                </div>
+              </div>
+
+              <!-- more stories in mobile version -->
+              <div class="more-stories-mobile">
+                <h6 class="text-muted fw-bolder mt-3">MORE STORIES</h6>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+                <div class="border-top py-3">
+                  <img
+                    src="https://d.newsweek.com/en/full/1671845/pfizer-coronavirus-vaccine.webp?w=95&h=95&f=1df408679dd99d8434c099fc160b28c3"
+                    alt="rejection"
+                    class="float-start m-1"
+                    style="height: 95px; width: 95px"
+                  />
+                  <h5 class="card-title">
+                    U.S. Rejected Offers to Buy More Pfizer COVID Vaccine
+                    Shots—ex-FDA Chief
+                  </h5>
+                  <p class="summary">
+                    The company has entered into agreements to supply other
+                    countries since it reported promising results for its vaccine
+                    contender, Scott Gottlieb, the head of the Food and Drug
+                    Administration (FDA) said
+                  </p>
+                </div>
+              </div>
+
+              <!-- my turn in mobile version -->
+              <div class="turn-culture-mobile">
+                <h6 class="col-12 text-muted fw-bold">MY TURN</h6>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1681275/coronavirus-pandemic-mini-stroke-hospitals.jpg?w=397&amp;h=397&amp;f=ece665acb6b840a4ad0d35977b20dfa7"
+                      class="img-fluid mb-3"
+                      alt="man in mask"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#">
+                        'I'm 23, I Had a Mini Stroke Days After Contracting COVID'
+                      </a>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1680326/infant-infant-spasms-medical-emergency-baby.png?w=397&amp;h=397&amp;f=74cebbfc50e69c2f9c4835872defed74"
+                      class="img-fluid mb-3"
+                      alt="crawling baby"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#">
+                        'My baby had a medical emergency during COVID'
+                      </a>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1680598/genius-gifted-child-black-gifted-child.png?w=397&amp;h=397&amp;f=adf39e37173b5b5fdf35fc63cae274a0"
+                      class="img-fluid mb-3"
+                      alt="young black boy sitting"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#">
+                        'I'm 12. Next Year I'm Studying Aerospace Engineering at
+                        University'
+                      </a>
+                    </h6>
+                  </div>
+                </div>
+                <!-- culture and TRAVEL -->
+                <h6 class="col-12 text-muted fw-bolder">CULTURE AND TRAVEL</h6>
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1682551/suv-micro-rv.webp?w=397&amp;h=397&amp;f=71607eddbf7bb620301976f090cfc8f0"
+                      class="img-fluid mb-3"
+                      alt="man in mask"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#">
+                        Is Car Glamping the More Accessible Alternative to Van Life?
+                      </a>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1640602/36-dominican-republic.webp?w=397&amp;h=397&amp;f=365c7709609c603fc1b938755877a443"
+                      class="img-fluid mb-3"
+                      alt="crawling baby"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#">
+                        These Countries Are the Most Dependent on Tourism
+                      </a>
+                    </h6>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg">
+                    <img
+                      src="https://d.newsweek.com/en/full/1637742/100-best-rock-albums-all-time.webp?w=397&amp;h=397&amp;f=5f1c21a471dc42bcd8301bff02f64462"
+                      class="img-fluid mb-3"
+                      alt="young black boy sitting"
+                    />
+                    <h6 class="text-muted fw-bold">
+                      <a href="#"> 100 Best Rock Albums of All Time </a>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sponsored insight -->
+
+              <article class="card sponsored-card border-1 my-3">
+                <div class="position-relative border-1">
+                  <img
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1681099/netherlands-online-module-amsterdam-photo.jpg?w=500&h=333&l=50&t=51&f=3610bf0950907bb346fc123edc405193"
+                    alt="anthony fauci coronavirus"
+                  />
+                  <div
+                    class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                  >
+                    SPONSORED INSIGHT
+                  </div>
+                </div>
+                <h4 class="top-title p-1 px-lg-3 mt-2">
+                  <a href="#" class="font-weight-bold text-body">
+                    The Netherlands - Home of Innovation
+                  </a>
+                </h4>
+                <p class="summary p-1 px-lg-3">
+                  With a reputation as one of Europe’s most connected,
+                  digitized, and innovative economies, the Netherlands recently
+                  overtook the UK as the top recipient of FDI inflows in Europe.
+                </p>
+              </article>
+
+              <!--sign up sec -->
+              <div class="card signup mx-2">
+                <div class="card-header p-4">
+                  <div class="d-flex align-items-center">
+                    <img
+                      class="m-1"
+                      src="img/n.png"
+                      alt="n-logo"
+                      height="40"
+                      width="45"
+                    />
+                    <h6 class="fw-bold">
+                      START YOUR DAY WITH OUR TOP 5 ARTICLES
+                    </h6>
+                  </div>
+                  <div
+                    class="newsletter-form form d-flex flex-column flex-md-column flex-lg-column justify-content-center"
+                  >
+                    <input
+                      class="signup-btn"
+                      type="email"
+                      placeholder="Email address"
+                    />
+                    <a href="#" class="btn btn-danger signup-btn"
+                      >FREE SIGN UP &gt;</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!--more sponsored cards -->
+              <div class="trying">
+                <article class="card sponsored-card border-1 my-3">
+                  <div class="position-relative border-1">
+                    <img
+                      class="img-fluid"
+                      src="https://d.newsweek.com/en/full/1671053/nnovate2.jpg?w=500&amp;h=333&amp;f=7c0fd52aaf6156db616eed42842988db"
+                      alt="anthony fauci coronavirus"
+                    />
+                    <div
+                      class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                    >
+                      SPONSORED BY BERLIN PARTNERS
+                    </div>
+                  </div>
+                  <h4 class="top-title p-1 px-lg-3 mt-2">
+                    <a href="#" class="font-weight-bold text-body">
+                      The Netherlands - Home of Innovation
+                    </a>
+                  </h4>
+                  <p class="summary p-1 px-lg-3">
+                    Berlin has long been a place where new technologies develop
+                    at a particularly rapid pace. In the early years, the city
+                    was a special breeding ground for blockchain technology with
+                    its subversive flair. Today, the technology has become an
+                    important economic factor with countless use-cases. See the
+                    latest in crypto + blockchain and business.
+                  </p>
+                </article>
+                <article class="card sponsored-card border-1 my-3">
+                  <div class="position-relative border-1">
+                    <img
+                      class="img-fluid"
+                      src="https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0"
+                      alt="most responsible companies 2021"
+                    />
+                    <div
+                      class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                    >
+                      RANKINGS
+                    </div>
+                  </div>
+                  <h4 class="top-title p-1 px-lg-3 mt-2">
+                    <a href="#" class="font-weight-bold text-body">
+                      America's Most Responsible Companies 2021
+                    </a>
+                  </h4>
+                  <p class="summary p-1 px-lg-3">
+                    We partnered with Statista to rank the country's Most
+                    Responsible Companies. They share the values that we all
+                    prioritize, and that's worth recognizing in 2021
+                  </p>
+                </article>
+                <article class="card sponsored-card border-1 my-3">
+                  <div class="position-relative border-1">
+                    <img
+                      class="img-fluid"
+                      src="https://d.newsweek.com/en/full/1680316/americas-most-responsible-companies-2021.png?w=500&h=333&f=ae10b886f06d2f293296bc4d2f90dda0"
+                      alt="most responsible companies 2021"
+                    />
+                    <div
+                      class="sponsored-category fw-bold position-absolute bottom-0 start-0"
+                    >
+                      RANKINGS
+                    </div>
+                  </div>
+                  <h4 class="top-title p-1 px-lg-3 mt-2">
+                    <a href="#" class="font-weight-bold text-body">
+                      America's Most Responsible Companies 2021
+                    </a>
+                  </h4>
+                  <p class="summary p-1 px-lg-3">
+                    We partnered with Statista to rank the country's Most
+                    Responsible Companies. They share the values that we all
+                    prioritize, and that's worth recognizing in 2021
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bottom section -->
+    <div class="bottom">
+      <!-- N in the magazine -->
+      <div class="magazine container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4 mb-3">
+        <div class="row justify-content-center block-title py-3">
+          <span class="n-icon"></span>IN THE MAGAZINE
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4">
+          <div class="col">
+            <div class="wrap position-relative">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=360&amp;h=480&amp;q=90&amp;f=72688076d2b17cf70a26e18a31a2a69a"
+                  alt="cover nw you first"
+                  title="cover nw"
+                  width="360"
+                  height="480"
+                />
+              </div>
+              <div
+                class="december category block-title position-absolute bottom-0 start-0"
+              >
+                DECEMBER 11 ISSUE
+              </div>
+            </div>
+            <div class="see-features block-title text-center mt-1 mb-1">
+              SEE ALL FEATURES &gt;
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&amp;h=311&amp;l=49&amp;t=48&amp;q=90&amp;f=b4199882348a460299d282c96d719a51"
+                  alt="vaccines"
+                  title="vaccines"
+                  width="466"
+                  height="311"
+                />
+                <div class="category d-flex mt-3">
+                  <div class="red-category block-title">COVER</div>
+                  <div class="white-category block-title">HEALTH</div>
+                </div>
+                <h5>
+                  <a href="#" class="news-link"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US
+                    Skeptics Embrace Them</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&amp;h=311&amp;l=49&amp;t=48&amp;q=90&amp;f=b4199882348a460299d282c96d719a51"
+                  alt="vaccines"
+                  title="vaccines"
+                  width="466"
+                  height="311"
+                />
+                <div class="category d-flex mt-3">
+                  <div class="red-category block-title">COVER</div>
+                  <div class="white-category block-title">HEALTH</div>
+                </div>
+                <h5>
+                  <a href="#" class="news-link"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US
+                    Skeptics Embrace Them</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.jpg?w=466&amp;h=311&amp;l=49&amp;t=48&amp;q=90&amp;f=b4199882348a460299d282c96d719a51"
+                  alt="vaccines"
+                  title="vaccines"
+                  width="466"
+                  height="311"
+                />
+                <div class="category d-flex mt-3">
+                  <div class="red-category block-title">COVER</div>
+                  <div class="white-category block-title">HEALTH</div>
+                </div>
+                <h5>
+                  <a href="#" class="news-link"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US
+                    Skeptics Embrace Them</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 mt-3">
+          <div class="col">
+            <div class="wrap">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1674794/cul-map-holiday-food-tang-yuan.jpg?w=466&amp;h=311&amp;l=62&amp;t=38&amp;q=90&amp;f=258feff5c6f4dc315f1d67e58f8c5ba3"
+                  alt="eggs"
+                  title="eggs"
+                  width="466"
+                  height="311"
+                />
+                <div class="category d-flex mt-3 flex-wrap">
+                  <div class="red-category block-title">DOWNTIME</div>
+                  <div class="white-category block-title">CULTURE</div>
+                </div>
+                <h5>
+                  <a href="#" class="news-link"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US
+                    Skeptics Embrace Them</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image">
+                <img
+                  class="img-fluid"
+                  src="https://d.newsweek.com/en/full/1674794/cul-map-holiday-food-tang-yuan.jpg?w=466&amp;h=311&amp;l=62&amp;t=38&amp;q=90&amp;f=258feff5c6f4dc315f1d67e58f8c5ba3"
+                  alt="eggs"
+                  title="eggs"
+                  width="466"
+                  height="311"
+                />
+                <div class="category d-flex mt-3 flex-wrap">
+                  <div class="red-category block-title">DOWNTIME</div>
+                  <div class="white-category block-title">CULTURE</div>
+                </div>
+                <h5>
+                  <a href="#" class="news-link"
+                    >Vaccines Won't Stop the Pandemic Until 50 Million US
+                    Skeptics Embrace Them</a
+                  >
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap position-relative">
+              <img
+                class="img-fluid"
+                alt="city"
+                title="city"
+                src="https://d.newsweek.com/en/full/1678160/lineup.jpg?w=480&amp;h=320&amp;q=90&amp;f=967951a3852b2efb2f80b1abcdf1ccce"
+                width="480"
+                height="320"
+              />
+              <div
+                class="category red-category block-title position-absolute bottom-0 start-0"
+              >
+                IN FOCUS
+              </div>
+            </div>
+            <h5 class="mt-2">
+              <a href="#" class="news-link">LINEUP</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <!-- Editor's Pick -->
+      <div class="editor container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="row justify-content-center block-title py-3">
+          <span class="n-icon"></span>EDITOR'S PICK
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-3">
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+          <div class="col">
+            <div class="wrap">
+              <div class="image position-relative">
+                <img
+                  src="https://d.newsweek.com/en/full/1682397/william-shakespeare.jpg?w=397&amp;h=295&amp;f=306d0cc3a23d20d4c1a4db4e14ea0ccb"
+                  alt="Shakespeare"
+                  title="Shakespeare"
+                  class="img-fluid"
+                  width="397"
+                  height="295"
+                />
+                <div
+                  class="editor-category category block-title position-absolute bottom-0 start-0"
+                >
+                  HEALTH
+                </div>
+              </div>
+              <h4 class="mt-2">
+                <a href="#" class="news-link"
+                  >William Shakespeare Becomes Second Person to Get Pfizer COVID
+                  Vaccine</a
+                >
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- U.S. -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">U.S.</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- World -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">World</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Business -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">Business</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tech & Science -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">Tech & Science</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Culture -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">Culture</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sports -->
+      <div class="picks container-fluid p-sm-2 p-md-3 p-lg-4 p-xl-4">
+        <div class="picks-title block-title pt-3">
+          <a href="#">Sports</a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col mb-2">
+            <img
+              alt="murder"
+              title="murder"
+              class="img-fluid"
+              src="https://d.newsweek.com/en/full/1683146/lancaster-murder.png?w=397&amp;h=265&amp;f=75964f6c433c979d3e3d58f1fc026558"
+              width="397"
+              height="265"
+            />
+            <h4>
+              <a href="#"
+                >California Father Charged Over Decapitation of Son, 13 and
+                Daughter, 13</a
+              >
+            </h4>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column">
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="PlayStation 5"
+                    title="PS5 PlayStation 5"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683143/ps5-playstation-5.jpg?w=397&amp;h=265&amp;f=f1693a09b0f9569dba07a551bee9e663"
+                    width="300"
+                    height="265"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between pb-2 mb-2 border-secondary border-bottom"
+              >
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2">
+                <div class="image">
+                  <img
+                    alt="COVID after thanksgiving"
+                    title="COVID after thanksgiving"
+                    class="img-fluid"
+                    src="https://d.newsweek.com/en/full/1683123/covid-19-testing-chicago-post-thanksgiving-2020.jpg?w=95&amp;h=95&amp;f=7f50a351035d8aefe281bc182313256b"
+                    width="300"
+                    height="95"
+                  />
+                </div>
+                <div class="info">
+                  <h5>
+                    <a href="#"
+                      >PS5 Restock Updates as Walmart Blocks BrickSeek From
+                      Sharing Inventory</a
+                    >
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subscribe cards -->
+    <div class="subscribe-cards container-fluid p-4 p-md-4 p-lg-4 mt-3">
+      <div class="row 4 mx-lg-4">
+        <!-- subscribe card-->
+        <div class="col d-flex flex-column col-md-12 col-lg-8">
+          <div class="block-title fs-6">
+            <a href="#">SUBSCRIBE</a>
+          </div>
+          <div
+            class="card flex-column flex-md-row flex-lg-row p-sm-5 p-md-5 p-lg-5 border-0 mb-md-4"
+          >
+            <div class="image overlapping-container mx-auto mt-4 mt-lg-1">
+              <div class="behind-cover">
+                <img
+                  src="https://d.newsweek.com/en/full/1671676/cover-november-27-2020.jpg?w=170&amp;q=95&amp;f=58167a570fb61a0b8203f0526bc45eca"
+                  alt="magazine white cover"
+                />
+              </div>
+              <div class="top-cover">
+                <img
+                  src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a"
+                  alt="magazine red cover"
+                />
+              </div>
+            </div>
+            <div class="card-body text-center text-md-start">
+              <h5 class="card-title">
+                In-depth Stories You Don't See Elsewhere About Topics You Want
+                to Read!
+              </h5>
+              <p class="card-text">
+                All Access + Weekly Delivery. Choose A Membership That's Perfect
+                for You!
+              </p>
+              <a href="#" class="btn btn-danger mx-auto">SUBSCRIBE &gt;</a>
+            </div>
+          </div>
+        </div>
+        <!--newsletter card-->
+        <div class="col d-flex flex-column col-md-12 col-lg-4">
+          <div class="block-title fs-6">
+            <a href="#">NEWSLETTER</a>
+          </div>
+          <div class="newsletter-card d-lg-flex d-md-flex mb-md-4">
+            <div class="image newsletter-img"></div>
+            <div class="info d-flex flex-column p-lg-3">
+              <h5 class="card-title text-center text-md-center text-lg-start">
+                The Starting 5
+              </h5>
+              <p class="card-text text-center text-md-center text-lg-start">
+                See why nearly a quarter of a million subscribers begin their
+                day with the Starting 5.
+              </p>
+              <div
+                class="newsletter-form form d-flex flex-lg-column justify-content-center"
+              >
+                <input
+                  class="signup-btn"
+                  type="email"
+                  placeholder="Email address"
+                />
+                <a href="#" class="btn btn-danger signup-btn"
+                  >FREE SIGN UP &gt;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid mt-4 mt-md-1 mt-lg-1">
+      <div
+        class="footer-top d-flex flex-column flex-md-row justify-content-between py-3"
+      >
+        <div class="d-flex flex-column flex-md-row align-items-md-end">
+          <div>
+            <img
+              class="bottom-logo"
+              src="./img/newsweek-red.png"
+              alt="newsweek red logo"
+            />
+          </div>
+          <div class="legal pb-1">© 2020 NEWSWEEK DIGITAL LLC</div>
+        </div>
+        <div class="footer-social d-flex flex-row">
+          <i class="m-2 fs-4 fab fa-facebook-square"></i>
+          <i class="m-2 fs-4 fab fa-twitter"></i>
+          <i class="m-2 fs-4 fab fa-instagram"></i>
+          <i class="m-2 fs-4 fab fa-tumblr"></i>
+          <i class="m-2 fs-4 fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-edition d-flex">
+          <div class="fw-bold">Edition</div>
+          <ul class="d-flex flex-wrap list-unstyled">
+            <li class="about-link"><a href="#">U.S Edition</a></li>
+            <li class="about-link"><a href="#">日本</a></li>
+            <li class="about-link"><a href="#">Pakistan</a></li>
+            <li class="about-link"><a href="#">Polska</a></li>
+            <li class="about-link"><a href="#">România</a></li>
+          </ul>
+        </div>
+        <div class="about">
+          <ul class="about-links list-unstyled d-flex flex-wrap">
+            <li><a class="about-link" href="#">About us</a></li>
+            <li><a class="about-link" href="#">Corrections</a></li>
+            <li><a class="about-link" href="#">Contact Us</a></li>
+            <li><a class="about-link" href="#">Editorial Guidelines</a></li>
+            <li><a class="about-link" href="#">Advertise</a></li>
+            <li><a class="about-link" href="#">Copyright</a></li>
+            <li><a class="about-link" href="#">Terms & Conditions</a></li>
+            <li><a class="about-link" href="#">Privacy Policy</a></li>
+            <li><a class="about-link" href="#">Cookie Policy</a></li>
+            <li><a class="about-link" href="#">Terms of Sale</a></li>
+            <li><a class="about-link" href="#">Archive</a></li>
+            <li><a class="about-link" href="#">Announcements</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bffcdc15fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
