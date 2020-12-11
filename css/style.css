@@ -675,12 +675,22 @@ ul li {
 .newsletter-card .newsletter-img {
   background-image: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5");
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   text-align: center;
   height: 150px;
 }
+@media only screen and (min-width: 768px) {
+  .newsletter-card .newsletter-img {
+    background-position: center;
+    height: 221px;
+    width: 100%;
+    padding-right: 5px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .newsletter-card .newsletter-img {
+    background-position: center;
     height: 339px;
     width: 100%;
     padding-right: 5px;
@@ -689,6 +699,13 @@ ul li {
 
 .newsletter-card .info {
   padding-top: 12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .newsletter-card .card-title {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
 }
 
 .newsletter-form .signup-btn {
@@ -717,7 +734,7 @@ footer {
   list-style: none;
   padding: 0 0.5rem;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer-links .about-link {
     border-right: 1px solid #d9d9d9;
   }
