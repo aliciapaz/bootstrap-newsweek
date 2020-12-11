@@ -592,6 +592,21 @@ ul li {
   background-color: #000;
 }
 
+/* signup and sponsored cards */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sponsored-card {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .signup {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
 .bottom {
   margin-top: 5rem;
 }
@@ -701,7 +716,7 @@ ul li {
   padding-top: 12px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .newsletter-card .card-title {
     text-transform: uppercase;
     font-size: 1.3rem;
