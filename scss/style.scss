@@ -137,18 +137,38 @@ ul li {
 
 /* mobile version */
 
-.mobile-display {
-  @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
+  .turn-culture {
+    display: none;
+  }
+
+  .more-stories {
+    display: none;
+  }
+
+  .more-stories-mobile {
     display: block;
   }
 
-  @media only screen and (min-width: 414px) {
-    display: none;
+  .turn-culture-mobile {
+    display: block;
   }
 }
 
-.main-section {
-  @media only screen and (max-width: 414px) {
+@media only screen and (min-width: 414px) {
+  .turn-culture {
+    display: block;
+  }
+
+  .more-stories {
+    display: block;
+  }
+
+  .more-stories-mobile {
+    display: none;
+  }
+
+  .turn-culture-mobile {
     display: none;
   }
 }

@@ -544,22 +544,39 @@ ul li {
 
 /* mobile version */
 @media only screen and (max-width: 414px) {
-  .mobile-display {
+  .turn-culture {
+    display: none;
+  }
+
+  .more-stories {
+    display: none;
+  }
+
+  .more-stories-mobile {
+    display: block;
+  }
+
+  .turn-culture-mobile {
     display: block;
   }
 }
 @media only screen and (min-width: 414px) {
-  .mobile-display {
+  .turn-culture {
+    display: block;
+  }
+
+  .more-stories {
+    display: block;
+  }
+
+  .more-stories-mobile {
+    display: none;
+  }
+
+  .turn-culture-mobile {
     display: none;
   }
 }
-
-@media only screen and (max-width: 414px) {
-  .main-section {
-    display: none;
-  }
-}
-
 .nav-container {
   background-color: #f72210;
 }
