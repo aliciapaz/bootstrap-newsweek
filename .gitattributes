@@ -1,0 +1,2 @@
+(^|/)bootstrap([^.]*)\.(js|css|less|scss|styl)$ -linguist-vendored
+(^|/)custom\.bootstrap([^\s]*)(js|css|less|scss|styl)$ -linguist-vendored
